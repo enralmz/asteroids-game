@@ -31,7 +31,7 @@ class Player(CircleShape):
         if keys[pygame.K_w]:
             self.move(dt)
         if keys[pygame.K_s]:
-            self.move(dt)
+            self.move(-dt)
 
     def move(self, dt):
         unit_vector = pygame.Vector2(0, 1)
